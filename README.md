@@ -17,6 +17,14 @@ npm run dev -- --host 127.0.0.1 --port 7790
 
 打开 `http://127.0.0.1:7790/prd.html#/projects` 查看原型和 PRD 外壳。模板默认是 Baseline 空批注；运行 `npm run demo:annotations` 可以载入批注示例。
 
+## 评审示例
+
+下面是同一套原型加载示例 PRD 后的实际页面：左侧可交互，右侧说明背景、目标、范围，并用两条批注对应新建按钮和项目列表。
+
+![项目空间原型与 PRD 批注示例](assets/images/prd-annotated-demo.png)
+
+截图对应的文档在 `assets/template/examples/annotated/`。运行 `npm run demo:annotations` 可在本地切换到该示例；运行 `npm run demo:baseline` 可恢复空白 Baseline。示例只使用本地内存数据。
+
 ## 约定
 
 - 保留源前端 UI，不按截图重新绘制。

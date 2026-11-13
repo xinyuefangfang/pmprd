@@ -40,7 +40,7 @@ function App() {
       <header><span>Workspace</span><span className="environment">Demo</span></header>
       {route === '/settings' ? <section>
         <div className="heading"><h1>Settings</h1></div>
-        <dl data-prd="settings.environment"><div><dt>Workspace</dt><dd>Demo workspace</dd></div><div><dt>Environment</dt><dd>Local preview</dd></div></dl>
+        <dl><div><dt>Workspace</dt><dd>Demo workspace</dd></div><div><dt>Environment</dt><dd>Local preview</dd></div></dl>
       </section> : <section>
         <div className="heading"><h1>Projects</h1><button className="primary" data-prd="projects.create" onClick={() => dialog.current?.showModal()}><Plus size={16} />Create project</button></div>
         <div className="table-wrap" data-prd="projects.list"><table><thead><tr><th>Name</th><th>Created</th><th>Status</th></tr></thead><tbody>{projects.map((project) => <tr key={project.id}><td><Folder size={16} />{project.name}</td><td>{project.created}</td><td><span className="status">Active</span></td></tr>)}</tbody></table></div>
